@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: check-in-app-deployment
+spec:
+  selector:
+    matchLabels:
+      name: check-in-app
+  template:
+    metadata:
+      labels:
+        name: checkin-app
+    spec:
+      containers:
+        - name: app
+          image: dawid10/check-in-front:latest
+          ports:
+            - containerPort: 8080
