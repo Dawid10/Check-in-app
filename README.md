@@ -11,3 +11,8 @@ Create and run docker container on Amazon ECS using CloudFormation and CLI.
 -CloudFormation stack to create IAM role
 
 -CloudFormation stack to deploy docker container
+
+
+
+The application was deployed using Amazon Elastic Container Service. This service allows using serverless deployment(Fargate)
+It’s highly scalable and offers high availability and security. It’s deeply integrated with a variety of AWS services including ELB, VPC, IAM and many more. 
